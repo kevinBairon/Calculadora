@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <div class="calculadora">
+        <h1>Calculadora</h1>
+        <div class="container_input">
+            <input class="input" id="resultado" placeholder="0" value="0"/> 
+        </div>
+        <div class="teclado">
+            <button class="number" onclick="agregarNumero(1)">1</button>
+            <button class="number" onclick="agregarNumero(2)">2</button>
+            <button class="number" onclick="agregarNumero(3)">3</button>
+            <button class="operator" onclick="agregarOperador('+')">+</button>
+            <button class="number" onclick="agregarNumero(4)">4</button>
+            <button class="number" onclick="agregarNumero(5)">5</button>
+            <button class="number" onclick="agregarNumero(6)">6</button>
+            <button class="operator" onclick="agregarOperador('-')">-</button>
+            <button class="number" onclick="agregarNumero(7)">7</button>
+            <button class="number" onclick="agregarNumero(8)">8</button>
+            <button class="number" onclick="agregarNumero(9)">9</button>
+            <button class="operator" onclick="agregarOperador('*')">x</button>
+            <button class="equal" onclick="calcular()">=</button>
+            <button class="number" onclick="agregarNumero(0)">0</button>
+            <button class="delete" onclick="borrar()">c</button>
+            <button class="operator" onclick="agregarOperador('/')">/</button>
+        </div>
+    </div>
+    
+    <script src="./codigo.js"></script>
+</body>
+</html>
